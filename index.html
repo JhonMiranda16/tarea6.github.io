@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Ingresos</title>
+</head>
+<body>
+    <script>
+        var dato = prompt("Ingrese su nombre");
+        var x = parseInt(prompt("Ingrese sus ingresos"));
+
+        if (x <= 1129) {
+            document.write("<h1>Usted pertenece a una categoría Básica</h1>");
+        } else if (x >= 1130 && x <= 2499) {
+            document.write("<h1>Usted pertenece a una categoría Intermedia</h1>");
+        } else if (x >= 2500 && x <= 5499) {
+            document.write("<h1>Usted pertenece a una categoría Alta</h1>");
+        } else if (x >= 5500) {
+            document.write("<h1>Usted pertenece a una categoría Premium</h1>");
+        }
+    </script>
+</body>
+</html>
